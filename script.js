@@ -46,3 +46,13 @@ console.log(typeof bool);
 let noValue = null;
 let noValue2;
 console.log(noValue2); //undefined
+num = 0 * -1;
+num = 0,1 + 0,2;
+console.log(num);
+let array = [1, 2, 3, 4];
+array = [1, 'hello', true, undefined, null];
+console.log(array);
+console.log(array[0]);
+array[0] = 7;
+console.log(array);
+
