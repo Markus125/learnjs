@@ -1,41 +1,24 @@
-function hello() {
-    console.log('hello1');
+//console.log(window, document);
+let title = document.getElementById('title');
+console.log({title});
 
+setTimeout(() => {
+    title.innerText = 'Goodbye Js';
+    title.style.background = 'coral'
+}, 2000)
+let r, g ,b;
+setInterval(() => {
+r = Math.round (Math.random() * 255);
+g = Math.round (Math.random() * 255);
+b = Math.round (Math.random() * 255);
+title.style.background = `rgb(${r}, ${g}, ${b})`;
+if(title.classList.contains('green')) {
+    title.classList.replace('red', 'green');
 }
-let hello2 = function(){
-    console.log('hello2');
-}
+}, 0);
 
-let hello3 = () => {
-    console.log('hello3');
-}
-
-let hello4 = () => console.log('hello4');
-
-hello();
-hello2();
-hello3();
-hello4();
-
-let person = {
-    name: 'Markus',
-    age: '17',
-    describe(){
-        console.log(this);
-        console.log('name' + this.name + 'age' + this.age);
-    }
-    describe2: () => {
-        console.log(this);
-        console.log('name' + this.name + 'age' + this.age);
-
-    }
-    describe3: function () {
-        console.log(this);
-        console.log('name' + this.name + 'age' + this.age);
-
-    }
-}
-
-person.describe();
-person.describe2();
-person.describe3();
+let textinput = document.querySelector('#textinput');
+textinput.addEventListener('change', evt => {
+    console.log(evt);
+    title.innerText = textinput.ariaValueMax.split('').reverse().join();
+});
