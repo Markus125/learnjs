@@ -18,7 +18,7 @@ ctx.stroke();
 
 ctx.beginPath();
 ctx.moveTo(300, 300); 
-ctx.lineTo(320, 315);
+ctx.lineTo(330, 315);
 ctx.lineTo(310, 295);
 ctx.lineTo(300, 315);
 ctx.lineTo(318, 300);
@@ -27,12 +27,21 @@ ctx.stroke();
 
 //Rõngas
 ctx.beginPath();
-ctx.arc(80, 70, 50, 0, 2 * Math.PI);
+ctx.strokeStyle = 'black';
+ctx.arc(100, 50, 30, 0, Math.PI/100*360);
+ctx.closePath();
 ctx.stroke();
 
 ctx.beginPath();
-ctx.arc(80, 70, 50, 5, 20);
-ctx.lineTo(80,35);
+ctx.moveTo(100, 50);
+ctx.lineTo(85, 15); ctx.lineTo(115, 15);
+ctx.lineTo(100, 50);
 ctx.fillStyle();
+
+ctx.beginPath();
+ctx.lineWidth = 15;
+ctx.strokeStyle = 'white';
+ctx.arc(100, 50, 40, 0, Math.PI/100*360);
+ctx.closePath();
 ctx.stroke();
 
