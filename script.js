@@ -32,6 +32,7 @@ ctx.stroke();
 
 ctx.beginPath();
 ctx.arc(80, 70, 50, 5, 20);
-ctx.fillStyle
+ctx.lineTo(80,35);
+ctx.fillStyle();
 ctx.stroke();
 
