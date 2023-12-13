@@ -1,6 +1,7 @@
-//lipp
+
 const canvas = document.getElementById("canvas");
 let ctx = canvas.getContext('2d');
+//lipp
 ctx.rect(150, 10, 100, 30); 
 ctx.fillStyle = "#0072CE";
 ctx.fillRect(150, 10, 100, 30)
@@ -15,15 +16,15 @@ ctx.rect(150, 10, 100, 90);
 ctx.stroke();
 
 //täheke
-
-ctx.beginPath();
-ctx.moveTo(300, 300); 
-ctx.lineTo(330, 315);
-ctx.lineTo(310, 295);
-ctx.lineTo(300, 315);
-ctx.lineTo(318, 300);
-ctx.lineTo(280, 50);
+ctx.beginPath(); 
+ctx.moveTo(115,70);
+ctx.lineTo(135,90);
+ctx.lineTo(125,60);
+ctx.lineTo(115,90);
+ctx.lineTo(135,70);
+ctx.lineTo(115,70);
 ctx.stroke();
+
 
 //Rõngas
 ctx.beginPath();
