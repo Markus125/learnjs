@@ -17,33 +17,32 @@ ctx.stroke();
 
 //täheke
 ctx.beginPath(); 
-ctx.moveTo(115,70);
-ctx.lineTo(135,90);
-ctx.lineTo(125,60);
-ctx.lineTo(115,90);
-ctx.lineTo(135,70);
-ctx.lineTo(115,70);
+ctx.moveTo(125,70);
+ctx.lineTo(145,90);
+ctx.lineTo(135,60);
+ctx.lineTo(125,90);
+ctx.lineTo(145,70);
+ctx.lineTo(125,70);
 ctx.stroke();
 
 
 //Rõngas
 ctx.beginPath();
-ctx.strokeStyle = 'black';
-ctx.arc(100, 50, 30, 0, Math.PI/100*360);
-ctx.closePath();
-ctx.stroke();
 
-ctx.beginPath();
-ctx.moveTo(100, 50);
-ctx.lineTo(85, 15); ctx.lineTo(115, 15);
-ctx.lineTo(100, 50);
-ctx.fillStyle();
-
-ctx.beginPath();
-ctx.lineWidth = 15;
+ctx.arc(110, 100, 20, 0, 2 * Math.PI);
 ctx.strokeStyle = 'white';
-ctx.arc(100, 50, 40, 0, Math.PI/100*360);
-ctx.closePath();
-ctx.stroke();
+ctx.fillStyle = 'white';
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.arc(110, 100, 20, 5, 10 );
+ctx.lineTo(110, 100);
+ctx.lineTo(110, 80);
+ctx.fillStyle = 'black';
+ctx.strokeStyle = 'black';
+ctx.fill()
+ctx.stroke()
+
 
 
